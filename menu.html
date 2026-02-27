@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Leilany's Portfolio</title>
+  <meta name="description" content="Explore our full menu of handcrafted coffees, fresh pastries, and seasonal specials." />
+  <meta name="author" content="Leilany" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar scrolled" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Lei<span>lany</span></a>
+      <ul class="nav-menu" role="list">
+        <li><a href="index.html"   class="nav-link">Home</a></li>
+        <li><a href="menu.html"    class="nav-link active">Menu</a></li>
+        <li><a href="about.html"   class="nav-link">About</a></li>
+        <li><a href="events.html"  class="nav-link">Events</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta">Contact Me</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero" aria-label="Menu page header">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="page-hero-content">
+      <span class="handwritten">Sip, savour, repeat</span>
+      <h1>Our Menu</h1>
+      <p>Every item is crafted with love and the finest ingredients — because you deserve the very best.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>›</span> <span>Menu</span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MENU SECTION -->
+  <main class="menu-page section-pad" aria-label="Menu items">
+    <div class="container">
+
+      <!-- Tabs -->
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab active" role="tab" data-category="coffees"  aria-selected="true">☕ Coffees</button>
+        <button class="menu-tab"        role="tab" data-category="pastries" aria-selected="false">🥐 Pastries</button>
+        <button class="menu-tab"        role="tab" data-category="seasonal" aria-selected="false">🌸 Seasonal</button>
+        <button class="menu-tab"        role="tab" data-category="cold"     aria-selected="false">🧊 Cold Drinks</button>
+      </div>
+
+      <!-- COFFEES -->
+      <div class="menu-category active" id="coffees" role="tabpanel">
+        <div class="menu-items-grid">
+
+          <article class="menu-item animate delay-1">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/espresso1/500/350" alt="Classic Espresso" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Classic Espresso</h3>
+              <p>A bold, rich shot of perfectly extracted espresso. Simple, elegant, timeless.</p>
+              <div class="menu-item-footer">
+                <span class="price">$3.50</span>
+                <span class="badge badge-pop">⭐ Popular</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-2">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/latte22/500/350" alt="Honey Lavender Latte" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Honey Lavender Latte</h3>
+              <p>Espresso, steamed oat milk, raw honey, and a hint of dried lavender. Pure bliss.</p>
+              <div class="menu-item-footer">
+                <span class="price">$6.50</span>
+                <span class="badge badge-hot">🔥 Bestseller</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-3">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/cappuccino3/500/350" alt="Vanilla Cappuccino" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Vanilla Cappuccino</h3>
+              <p>Silky espresso topped with velvety foam and a whisper of Madagascar vanilla.</p>
+              <div class="menu-item-footer">
+                <span class="price">$5.75</span>
+                <span class="badge badge-pop">⭐ Popular</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-1">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/flatwhite4/500/350" alt="Caramel Flat White" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Caramel Flat White</h3>
+              <p>Ristretto shots with velvety microfoam and a drizzle of house-made caramel sauce.</p>
+              <div class="menu-item-footer">
+                <span class="price">$6.00</span>
+                <span class="badge badge-new">✨ New</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-2">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/mocha5/500/350" alt="Spiced Mocha" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Spiced Dark Mocha</h3>
+              <p>Espresso meets dark chocolate with a warming blend of cinnamon and cardamom.</p>
+              <div class="menu-item-footer">
+                <span class="price">$6.75</span>
+                <span class="badge badge-hot">🔥 Bestseller</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-3">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/cortado6/500/350" alt="Rose Cortado" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Rose Cortado</h3>
+              <p>Equal parts espresso and warm milk, delicately perfumed with rose water.</p>
+              <div class="menu-item-footer">
+                <span class="price">$5.50</span>
+                <span class="badge badge-new">✨ New</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- PASTRIES -->
+      <div class="menu-category" id="pastries" role="tabpanel">
+        <div class="menu-items-grid">
+
+          <article class="menu-item animate delay-1">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/croissant1/500/350" alt="Almond Croissant" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Almond Butter Croissant</h3>
+              <p>Flaky, golden croissant generously filled with rich almond cream and toasted almonds.</p>
+              <div class="menu-item-footer">
+                <span class="price">$5.25</span>
+                <span class="badge badge-pop">⭐ Popular</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-2">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/muffin2/500/350" alt="Brown Butter Muffin" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Brown Butter Blueberry Muffin</h3>
+              <p>Fluffy, golden muffin bursting with fresh blueberries and a nutty brown butter crumble top.</p>
+              <div class="menu-item-footer">
+                <span class="price">$4.50</span>
+                <span class="badge badge-hot">🔥 Bestseller</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-3">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/tart3/500/350" alt="Caramel Tart" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Salted Caramel Tart</h3>
+              <p>Buttery shortcrust shell filled with silky salted caramel and a sprinkle of fleur de sel.</p>
+              <div class="menu-item-footer">
+                <span class="price">$6.00</span>
+                <span class="badge badge-pop">⭐ Popular</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-1">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/scone4/500/350" alt="Cranberry Scone" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Cranberry Orange Scone</h3>
+              <p>Light, crumbly scone with tart cranberries, orange zest, and a vanilla glaze drizzle.</p>
+              <div class="menu-item-footer">
+                <span class="price">$4.75</span>
+                <span class="badge badge-veg">🌱 Vegan option</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-2">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/brownie5/500/350" alt="Dark Chocolate Brownie" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Dark Chocolate Brownie</h3>
+              <p>Dense, fudgy brownie made with 72% dark chocolate and a touch of espresso powder.</p>
+              <div class="menu-item-footer">
+                <span class="price">$4.25</span>
+                <span class="badge badge-hot">🔥 Bestseller</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-3">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/eclair6/500/350" alt="Vanilla Eclair" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Vanilla Bean Eclair</h3>
+              <p>Light choux pastry filled with silky vanilla bean custard and topped with dark chocolate glaze.</p>
+              <div class="menu-item-footer">
+                <span class="price">$5.75</span>
+                <span class="badge badge-new">✨ New</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- SEASONAL -->
+      <div class="menu-category" id="seasonal" role="tabpanel">
+        <div class="menu-items-grid">
+
+          <article class="menu-item animate delay-1">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/matcha1/500/350" alt="Matcha Latte" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Ceremonial Matcha Latte</h3>
+              <p>Vibrant ceremonial-grade matcha whisked to perfection with warm oat milk and vanilla.</p>
+              <div class="menu-item-footer">
+                <span class="price">$7.00</span>
+                <span class="badge badge-veg">🌱 Vegan</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-2">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/pumpkin2/500/350" alt="Pumpkin Spice Latte" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Pumpkin Spice Latte</h3>
+              <p>A cozy autumn classic with real pumpkin, warm spices, and house-made whipped cream.</p>
+              <div class="menu-item-footer">
+                <span class="price">$7.25</span>
+                <span class="badge badge-hot">🍂 Seasonal</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-3">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/turmeric3/500/350" alt="Golden Turmeric Latte" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Golden Turmeric Latte</h3>
+              <p>A warming blend of turmeric, ginger, cinnamon, and black pepper in silky oat milk.</p>
+              <div class="menu-item-footer">
+                <span class="price">$6.50</span>
+                <span class="badge badge-new">✨ New</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- COLD DRINKS -->
+      <div class="menu-category" id="cold" role="tabpanel">
+        <div class="menu-items-grid">
+
+          <article class="menu-item animate delay-1">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/coldbrew1/500/350" alt="Cold Brew" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Slow-Drip Cold Brew</h3>
+              <p>Steeped for 18 hours for a smooth, bold, naturally sweet coffee experience over ice.</p>
+              <div class="menu-item-footer">
+                <span class="price">$6.00</span>
+                <span class="badge badge-pop">⭐ Popular</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-2">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/icedlatte2/500/350" alt="Brown Sugar Iced Latte" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Brown Sugar Iced Latte</h3>
+              <p>Espresso shaken with brown sugar syrup and cinnamon over ice with a splash of oat milk.</p>
+              <div class="menu-item-footer">
+                <span class="price">$6.75</span>
+                <span class="badge badge-hot">🔥 Bestseller</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-3">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/strawberry3/500/350" alt="Strawberry Matcha" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Strawberry Matcha Lemonade</h3>
+              <p>A vibrant, refreshing blend of ceremonial matcha, fresh strawberry, and house lemonade.</p>
+              <div class="menu-item-footer">
+                <span class="price">$7.50</span>
+                <span class="badge badge-new">✨ New</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item animate delay-1">
+            <div class="menu-item-img">
+              <img src="https://picsum.photos/seed/horchata4/500/350" alt="Iced Horchata Latte" loading="lazy" />
+            </div>
+            <div class="menu-item-body">
+              <h3>Iced Horchata Latte</h3>
+              <p>Creamy house-made horchata swirled with a shot of espresso over crushed ice.</p>
+              <div class="menu-item-footer">
+                <span class="price">$7.00</span>
+                <span class="badge badge-pop">⭐ Popular</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- NEWSLETTER STRIP -->
+  <section class="newsletter section-pad" aria-labelledby="nl-menu-title">
+    <div class="container">
+      <span class="handwritten" style="font-size:1.5rem;display:block;margin-bottom:10px;color:var(--caramel);">Never miss a new item</span>
+      <h2 id="nl-menu-title">Get Menu Updates</h2>
+      <p>Be the first to know about new seasonal items and limited specials.</p>
+      <form class="newsletter-form" id="newsletter-form" novalidate>
+        <input type="email" placeholder="your@email.com" required aria-label="Email address" />
+        <button type="submit" class="btn btn-light">Notify Me ✨</button>
+      </form>
+      <p id="newsletter-success" role="alert">🎉 You're in! We'll let you know first.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Lei<span>lany</span></a>
+        <p>A warm, cozy corner of the internet where creativity blooms and connections are made over good coffee.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/leilany" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+          <a href="contact.html" class="social-link" aria-label="Email">✉</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="menu.html">Coffees</a></li>
+          <li><a href="menu.html">Pastries</a></li>
+          <li><a href="menu.html">Seasonal</a></li>
+          <li><a href="menu.html">Cold Drinks</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Say Hello</h4>
+        <ul>
+          <li><a href="contact.html">Get in Touch</a></li>
+          <li><a href="https://www.linkedin.com/in/leilany" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="index.html#newsletter-form">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Leilany. Crafted with ☕ &amp; care.</p>
+      <p>All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="data/script.js"></script>
+</body>
+</html>

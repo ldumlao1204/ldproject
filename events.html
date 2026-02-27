@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events — Leilany's Portfolio</title>
+  <meta name="description" content="Join our cozy community events — workshops, coffee tastings, creative nights, and more." />
+  <meta name="author" content="Leilany" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar scrolled" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Lei<span>lany</span></a>
+      <ul class="nav-menu" role="list">
+        <li><a href="index.html"   class="nav-link">Home</a></li>
+        <li><a href="menu.html"    class="nav-link">Menu</a></li>
+        <li><a href="about.html"   class="nav-link">About</a></li>
+        <li><a href="events.html"  class="nav-link active">Events</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta">Contact Me</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero" aria-label="Events page header">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="page-hero-content">
+      <span class="handwritten">Gather, connect, celebrate</span>
+      <h1>Events &amp; Workshops</h1>
+      <p>From intimate coffee tastings to creative workshops — there's always something cozy happening.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>›</span> <span>Events</span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- UPCOMING EVENTS -->
+  <main class="section-pad" style="background:var(--cream);" aria-labelledby="upcoming-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="handwritten">Don't miss out</span>
+        <h2 id="upcoming-title">Upcoming Events</h2>
+        <div class="divider"></div>
+        <p>Reserve your spot and join us for an unforgettable experience.</p>
+      </div>
+      <div class="events-grid">
+
+        <article class="event-card animate delay-1">
+          <div class="event-img">
+            <img src="https://picsum.photos/seed/event1/600/400" alt="Latte Art Workshop" loading="lazy" />
+            <div class="event-date-badge">
+              <span class="day">15</span>
+              <span class="month">Mar</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <p class="event-cat">☕ Workshop</p>
+            <h3>Latte Art Masterclass</h3>
+            <p>Learn the secrets of beautiful latte art from our expert barista. Perfect for beginners and coffee lovers alike.</p>
+            <div class="event-meta">
+              <span>🕐 10:00 AM – 12:00 PM</span>
+              <span>📍 Studio A</span>
+            </div>
+            <div class="event-footer">
+              <span class="spots available">8 spots left</span>
+              <button class="btn btn-primary btn-sm rsvp-btn">RSVP Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card animate delay-2">
+          <div class="event-img">
+            <img src="https://picsum.photos/seed/event2/600/400" alt="Coffee Tasting" loading="lazy" />
+            <div class="event-date-badge">
+              <span class="day">22</span>
+              <span class="month">Mar</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <p class="event-cat">🌍 Tasting</p>
+            <h3>World Coffee Origins Tasting</h3>
+            <p>A guided journey through single-origin coffees from Ethiopia, Colombia, and Japan. Taste the difference terroir makes.</p>
+            <div class="event-meta">
+              <span>🕐 2:00 PM – 4:00 PM</span>
+              <span>📍 Tasting Room</span>
+            </div>
+            <div class="event-footer">
+              <span class="spots limited">3 spots left!</span>
+              <button class="btn btn-primary btn-sm rsvp-btn">RSVP Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card animate delay-3">
+          <div class="event-img">
+            <img src="https://picsum.photos/seed/event3/600/400" alt="Creative Journal Night" loading="lazy" />
+            <div class="event-date-badge">
+              <span class="day">29</span>
+              <span class="month">Mar</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <p class="event-cat">✍️ Creative</p>
+            <h3>Cozy Journaling &amp; Coffee Night</h3>
+            <p>Unplug, slow down, and fill your pages. We'll supply the prompts, the cozy ambience, and of course — the coffee.</p>
+            <div class="event-meta">
+              <span>🕐 6:00 PM – 8:30 PM</span>
+              <span>📍 Garden Terrace</span>
+            </div>
+            <div class="event-footer">
+              <span class="spots available">15 spots left</span>
+              <button class="btn btn-primary btn-sm rsvp-btn">RSVP Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card animate delay-1">
+          <div class="event-img">
+            <img src="https://picsum.photos/seed/event4/600/400" alt="Branding Workshop" loading="lazy" />
+            <div class="event-date-badge">
+              <span class="day">05</span>
+              <span class="month">Apr</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <p class="event-cat">🎨 Workshop</p>
+            <h3>Personal Branding for Creatives</h3>
+            <p>Discover how to build an authentic personal brand that feels like you. Workshop includes coffee, workbook, and good vibes.</p>
+            <div class="event-meta">
+              <span>🕐 11:00 AM – 2:00 PM</span>
+              <span>📍 Studio A</span>
+            </div>
+            <div class="event-footer">
+              <span class="spots available">12 spots left</span>
+              <button class="btn btn-primary btn-sm rsvp-btn">RSVP Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card animate delay-2">
+          <div class="event-img">
+            <img src="https://picsum.photos/seed/event5/600/400" alt="Plant Terrarium Workshop" loading="lazy" />
+            <div class="event-date-badge">
+              <span class="day">12</span>
+              <span class="month">Apr</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <p class="event-cat">🌿 Workshop</p>
+            <h3>Mini Terrarium &amp; Coffee Morning</h3>
+            <p>Build your own adorable mini terrarium while sipping on your favourite brew. A perfect Saturday morning activity.</p>
+            <div class="event-meta">
+              <span>🕐 9:00 AM – 11:00 AM</span>
+              <span>📍 Garden Terrace</span>
+            </div>
+            <div class="event-footer">
+              <span class="spots limited">5 spots left!</span>
+              <button class="btn btn-primary btn-sm rsvp-btn">RSVP Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card animate delay-3">
+          <div class="event-img">
+            <img src="https://picsum.photos/seed/event6/600/400" alt="Community Brunch" loading="lazy" />
+            <div class="event-date-badge">
+              <span class="day">19</span>
+              <span class="month">Apr</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <p class="event-cat">🥂 Community</p>
+            <h3>Spring Community Brunch</h3>
+            <p>Our seasonal community gathering — good food, great conversations, and the warmest people. All are welcome.</p>
+            <div class="event-meta">
+              <span>🕐 11:00 AM – 2:00 PM</span>
+              <span>📍 Main Hall</span>
+            </div>
+            <div class="event-footer">
+              <span class="spots available">Open to all</span>
+              <button class="btn btn-primary btn-sm rsvp-btn">RSVP Now</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- PAST HIGHLIGHTS -->
+  <section class="section-pad" style="background:var(--light-cream);" aria-labelledby="past-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="handwritten">Memories we've made</span>
+        <h2 id="past-title">Past Event Highlights</h2>
+        <div class="divider"></div>
+        <p>A look back at the beautiful moments we've shared together.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+        <div class="animate delay-1" style="border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 22px var(--shadow);position:relative;">
+          <img src="https://picsum.photos/seed/past1/600/450" alt="Winter Holiday Gathering" style="width:100%;height:240px;object-fit:cover;" loading="lazy" />
+          <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(44,24,16,.85));padding:20px 16px;">
+            <p style="color:var(--caramel);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;">Dec 2025</p>
+            <p style="color:var(--white);font-family:var(--font-heading);font-size:1.05rem;">Winter Holiday Gathering</p>
+          </div>
+        </div>
+        <div class="animate delay-2" style="border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 22px var(--shadow);position:relative;">
+          <img src="https://picsum.photos/seed/past2/600/450" alt="Photography Workshop" style="width:100%;height:240px;object-fit:cover;" loading="lazy" />
+          <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(44,24,16,.85));padding:20px 16px;">
+            <p style="color:var(--caramel);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;">Nov 2025</p>
+            <p style="color:var(--white);font-family:var(--font-heading);font-size:1.05rem;">Film Photography Workshop</p>
+          </div>
+        </div>
+        <div class="animate delay-3" style="border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 22px var(--shadow);position:relative;">
+          <img src="https://picsum.photos/seed/past3/600/450" alt="Autumn Coffee Social" style="width:100%;height:240px;object-fit:cover;" loading="lazy" />
+          <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(44,24,16,.85));padding:20px 16px;">
+            <p style="color:var(--caramel);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;">Oct 2025</p>
+            <p style="color:var(--white);font-family:var(--font-heading);font-size:1.05rem;">Autumn Coffee Social</p>
+          </div>
+        </div>
+        <div class="animate delay-4" style="border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 22px var(--shadow);position:relative;">
+          <img src="https://picsum.photos/seed/past4/600/450" alt="Watercolour Morning" style="width:100%;height:240px;object-fit:cover;" loading="lazy" />
+          <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(44,24,16,.85));padding:20px 16px;">
+            <p style="color:var(--caramel);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;">Sep 2025</p>
+            <p style="color:var(--white);font-family:var(--font-heading);font-size:1.05rem;">Watercolour Morning</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter section-pad" aria-labelledby="nl-events-title">
+    <div class="container">
+      <span class="handwritten" style="font-size:1.5rem;display:block;margin-bottom:10px;color:var(--caramel);">Never miss an event</span>
+      <h2 id="nl-events-title">Get Event Invites First</h2>
+      <p>Subscribe and be the first to hear about upcoming workshops, tastings, and community gatherings.</p>
+      <form class="newsletter-form" id="newsletter-form" novalidate>
+        <input type="email" placeholder="your@email.com" required aria-label="Email address" />
+        <button type="submit" class="btn btn-light">Keep Me Posted ✨</button>
+      </form>
+      <p id="newsletter-success" role="alert">🎉 You're on the list! See you at the next event.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Lei<span>lany</span></a>
+        <p>A warm, cozy corner of the internet where creativity blooms and connections are made over good coffee.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/leilany" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+          <a href="contact.html" class="social-link" aria-label="Email">✉</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Events</h4>
+        <ul>
+          <li><a href="events.html">Workshops</a></li>
+          <li><a href="events.html">Tastings</a></li>
+          <li><a href="events.html">Community</a></li>
+          <li><a href="events.html">Past Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Say Hello</h4>
+        <ul>
+          <li><a href="contact.html">Get in Touch</a></li>
+          <li><a href="https://www.linkedin.com/in/leilany" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="index.html#nl-title">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Leilany. Crafted with ☕ &amp; care.</p>
+      <p>All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="data/script.js"></script>
+</body>
+</html>

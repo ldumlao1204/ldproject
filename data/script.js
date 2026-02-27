@@ -12,14 +12,16 @@ window.addEventListener('scroll', () => {
 });
 
 hamburger?.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
+  const isOpen = hamburger.classList.toggle('active');
   navMenu.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', String(isOpen));
 });
 
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', () => {
     hamburger?.classList.remove('active');
     navMenu?.classList.remove('open');
+    hamburger?.setAttribute('aria-expanded', 'false');
   });
 });
 
@@ -30,6 +32,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
     const href = link.getAttribute('href');
     if (href === page || (page === '' && href === 'index.html')) {
       link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
     }
   });
 })();
@@ -114,7 +117,7 @@ document.getElementById('contact-form')?.addEventListener('submit', e => {
   let valid = true;
   e.target.querySelectorAll('[required]').forEach(input => {
     if (!input.value.trim()) {
-      input.style.borderColor = '#E07B39';
+      input.style.borderColor = '#8B4500';
       valid = false;
     } else {
       input.style.borderColor = '';

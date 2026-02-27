@@ -10,6 +10,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- NAVIGATION -->
   <nav class="navbar scrolled" aria-label="Main navigation">
@@ -22,14 +23,14 @@
         <li><a href="events.html"  class="nav-link active">Events</a></li>
         <li><a href="contact.html" class="nav-link nav-cta">Contact Me</a></li>
       </ul>
-      <button class="hamburger" aria-label="Toggle menu">
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
   <!-- PAGE HERO -->
-  <header class="page-hero" aria-label="Events page header">
+  <header class="page-hero" id="main-content" tabindex="-1" aria-label="Events page header">
     <div class="page-hero-bg" aria-hidden="true"></div>
     <div class="page-hero-content">
       <span class="handwritten">Gather, connect, celebrate</span>
